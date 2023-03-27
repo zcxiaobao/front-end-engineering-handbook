@@ -25,12 +25,12 @@ module.exports = {
         children: [{ title: "学前必读", path: "/" }],
       },
       {
-        title: "模块化",
+        title: "基础部分",
         path: "/module/origin",
         collapsable: false, // 不折叠
         children: [
           { title: "模块化前世今生", path: "/module/origin" },
-          { title: "四大规范", path: "/module/esm" },
+          // { title: "四大规范", path: "/module/esm" },
         ],
       },
     ],
