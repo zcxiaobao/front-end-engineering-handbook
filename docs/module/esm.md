@@ -10,7 +10,7 @@
 
 2. 完善的模块化标准应该是什么样子的？
 
-![](./../.vuepress/images/waht-module.png)
+<!-- ![](./../.vuepress/images/waht-module.png) -->
 
 经历了早期模块化方案探索的混沌时期，后续开始逐渐出现一系列业界认可的模块化规范：Commonjs、AMD、CMD、ESModule 规范。
 
@@ -89,7 +89,7 @@ module.exports.name = "Tom";
 exports.height = 180;
 ```
 
-![](./../.vuepress/images/common-exports.png)
+<!-- ![](./../.vuepress/images/common-exports.png) -->
 
 第二种情形: module.exports 指向了另一个同名 Tom，而 exports 仍指向原来的 Tom，require 默认导出 module.exports，因此最终 Mary 只能获得 Tom.name，不能完全确认 Tom 身份。
 
@@ -100,7 +100,7 @@ module.exports = {
 exports.height = 180;
 ```
 
-![](./../.vuepress/images/common-exports-2.png)
+<!-- ![](./../.vuepress/images/common-exports-2.png) -->
 
 第三种情形: exports 指向了另一个 Tom，而 require 获取 module.exports 上接口，因此 exports 提供的线索一律不予采纳。
 
@@ -111,7 +111,7 @@ exports = {
 };
 ```
 
-![](./../.vuepress/images/common-exports-3.png)
+<!-- ![](./../.vuepress/images/common-exports-3.png) -->
 
 module.exports 与 exports 全部指向新空间类似于第二
 种情形，这里不做描述了。
@@ -320,7 +320,8 @@ import { firstName, lastName, year } from "./zcxiaobao.js";
 与 Commonjs 不同，ESM 导出的为值的引用，因此 export 命令在导出时**需要为接口名和模块内部变量构建一一对应关系**。
 
 例如下面的案例 VSCode 会提示错误。
-![](./../.vuepress/images/error-export.png)
+
+<!-- ![](./../.vuepress/images/error-export.png) -->
 
 ESM 还支持默认导出的功能，即 export default。
 
@@ -398,7 +399,7 @@ import * as zcxiaobao from "./zcxiaobao.js";
 console.log(zcxiaobao);
 ```
 
-![](./../.vuepress/images/import-whole.png)
+<!-- ![](./../.vuepress/images/import-whole.png) -->
 
 我们惊喜的发现，default 也出现了，同时与 firstName 等属性是平级的。
 
@@ -461,7 +462,7 @@ getZc(); // zcxiaobao
 
 (import())[]函数的可以兼容市面 95% 以上的浏览器份额，可以比较放心的应用于日常开发中。
 
-![](./../.vuepress/images/dynamic-import.png)
+<!-- ![](./../.vuepress/images/dynamic-import.png) -->
 
 #### import.meta
 
@@ -478,7 +479,7 @@ console.log(import.meta.url); // file:URL
 
 从 caniuse 可以查到，[import.meta](https://caniuse.com/?search=import.meta)元属性达到 95%以上的兼容性。
 
-![](./../.vuepress/images/import-meta.png)
+<!-- ![](./../.vuepress/images/import-meta.png) -->
 
 #### import.map
 
@@ -584,7 +585,7 @@ Commonjs 同步模块加载模式仅适用于服务端，AMD、CMD 异步加载�
 
 ESModule 由官方提出，通过 [caniuse](https://caniuse.com/?search=%3Cscript%20type%3D%22module%22%3E) 查询可以发现，ESModule 已经可以适配 95% 以上的现代浏览器，兼容性经得住考验。
 
-![](./../.vuepress/images/esm-caniuse.png)
+<!-- ![](./../.vuepress/images/esm-caniuse.png) -->
 
 ### 服务端与浏览器端
 
@@ -617,4 +618,4 @@ Pure ESM 并不是这篇文章的核心内容，此外小包 Pure ESM 是一个�
 
 ## 总结
 
-![](./../.vuepress/images/module-all-summary.png)
+<!-- ![](./../.vuepress/images/module-all-summary.png) -->

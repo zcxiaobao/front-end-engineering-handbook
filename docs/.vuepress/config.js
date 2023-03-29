@@ -18,12 +18,12 @@ module.exports = {
       },
     ],
     sidebar: [
-      {
-        title: "欢迎学习",
-        path: "/",
-        collapsable: false, // 不折叠
-        children: [{ title: "学前必读", path: "/" }],
-      },
+      // {
+      //   title: "欢迎学习",
+      //   path: "/",
+      //   collapsable: false, // 不折叠
+      //   children: [{ title: "学前必读", path: "/" }],
+      // },
       {
         title: "基础部分",
         path: "/module/origin",
