@@ -30,7 +30,8 @@ module.exports = {
         collapsable: false, // 不折叠
         children: [
           { title: "模块化前世今生", path: "/module/origin" },
-          // { title: "四大规范", path: "/module/esm" },
+          { title: "前端模块化未来探索", path: "/module/esm" },
+          { title: "Pure ESM & Dual Packages", path: "/module/pure-esm" },
         ],
       },
     ],
