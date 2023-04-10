@@ -6,7 +6,7 @@ date: "2021-03-30"
 
 ## 写在前面
 
-> 本篇是前端工程化打怪升级的第 3 篇， [**小册传送门**](https://zcxiaobao.github.io/front-end-engineering-handbook/module/esm.html) | [**案例代码**](https://github.com/zcxiaobao/front-end-engineering-handbook/tree/main/code/3.pure-esm)
+> 本篇是前端工程化打怪升级的第 3 篇， [**小册传送门**](https://zcxiaobao.github.io/front-end-engineering-handbook/module/pure-esm.html) | [**案例代码**](https://github.com/zcxiaobao/front-end-engineering-handbook/tree/main/code/3.pure-esm)
 
 `Pure ESM` 是目前模块化中比较有意思的一个话题，最早由[sindresorhus](https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c) 在 Github 上的一个帖子中提出，它的意思不难理解，"纯净的 ESM"，对此暂且有两种解读：一种是比较狭义的理解，即 npm 包仅保留 ESM 格式产物，抛弃其他格式产物；广义的理解包容性更强，即所有的 npm 包都提供 ESM 格式产物。
 
